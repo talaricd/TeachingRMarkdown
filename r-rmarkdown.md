@@ -224,7 +224,31 @@ Now that you know how to make documents with RMarkdown, we should talk about sha
 
 ## GitHub
 
+Let's start on GitHub by making a new repository. You can think of a repository as a folder to contain all of the work for one project. Log in to GitHub, go to Repositories, and create a new one. Give it a name, and click "yes" to Initialize with README.md file. Copy the URL for the new repository.
 
+In RStudio Go to File --> New --> RProject --> Version Control --> git
+
+Paste in the URL from the GitHub page and browse to create the R Project somewhere that makes sense on your computer.
+
+We now have a remote version of the repository (on GitHub) and a local version (on our computers).
+
+Open the README.md file and write a new line in the file. Let's add the line "This repository hosts my analysis of the Gapminder dataset".
+
+The main idea is that we are going to make changes locally and then **push** them up to the remote on GitHub
+
+![github](img/github.png)
+
+In the Git window (usually) in the top right of RStudio, tick the box next to the README.md file. You ticking that box is called **staging** the change. Then click **commit**. Add a commit message like "Add to README". A good commit message succinctly tells  what the change will do. For more on writing good commit messages check out [Code like a girl's advice](https://code.likeagirl.io/useful-tips-for-writing-better-git-commit-messages-808770609503).
+
+After we have committed the change, now we will **push** to move the change to the remote version on GitHub.
+
+Now check GitHub to see the new line in the README file.
+
+### Add Gapminder analysis to GitHub
+
+Let's move the file called rwmeta.rmd to our GitHub directory. Change the output format to be HTML but keep the md file. On GitHub, md files will render automatically so they are easily read. **Stage**, **Commit**, then **push** the changed file up to GitHub.
+
+You can see the rendered page for this RMarkdown file on github at the [TeachingRMarkdown site](https://github.com/HSL-Data/TeachingRMarkdown/blob/master/r-rmarkdown.md)
 
 ## Resources for RMarkdown
 
@@ -243,3 +267,4 @@ Now that you know how to make documents with RMarkdown, we should talk about sha
 - [Software Carpentry's lesson on GitHub](http://swcarpentry.github.io/git-novice/)
 - [Git in Practice book](https://www.manning.com/books/git-in-practice) is approachable for novices
 - [GitHub training materials](https://help.github.com/articles/git-and-github-learning-resources/)
+- [Excuse me do you have a minute to talk about version control?](https://peerj.com/preprints/3159/)
