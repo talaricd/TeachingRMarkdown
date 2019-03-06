@@ -245,7 +245,9 @@ Now check GitHub to see the new line in the README file.
 
 ### Add Gapminder analysis to GitHub
 
-Let's move the file called rwmeta.rmd to our GitHub directory. Change the output format to be HTML but keep the md file. On GitHub, md files will render automatically so they are easily read. **Stage**, **Commit**, then **push** the changed file up to GitHub.
+Let's move the file called rwmeta.rmd to our GitHub directory. Change the output format to be HTML but keep the md file. Now knit the file so that the md and HTML are produced. On GitHub, md files will render automatically so they are easily read. **Stage**, **commit**, then **push** the changed files up to GitHub.
+
+Rejoice!
 
 You can see the rendered page for this RMarkdown file on github at the [TeachingRMarkdown site](https://github.com/HSL-Data/TeachingRMarkdown/blob/master/r-rmarkdown.md)
 
