@@ -56,7 +56,7 @@ head(gm)
 ```
 
 head as a table
-```{r, echo = FALSE, results="as.is"}
+```{r}
 library(knitr)
 kable(head(gm))
 ```

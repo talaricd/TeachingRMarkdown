@@ -331,12 +331,12 @@ $(document).ready(function () {
 <h1>Let’s embed some R code</h1>
 <p>We’ll write an R chunk that loads the tidyverse library and then reads in the GapMinder dataset from the Data subdirectory</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ───────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
 <pre><code>## ✔ ggplot2 3.1.0       ✔ purrr   0.3.1  
 ## ✔ tibble  2.0.1       ✔ dplyr   0.8.0.1
 ## ✔ tidyr   0.8.3       ✔ stringr 1.4.0  
 ## ✔ readr   1.1.1       ✔ forcats 0.3.0</code></pre>
-<pre><code>## ── Conflicts ──────────────────────────────────────────────── tidyverse_conflicts() ──
+<pre><code>## ── Conflicts ────────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>gm &lt;- read_csv(&quot;Data/gapminder.csv&quot;)</code></pre>
@@ -398,6 +398,8 @@ $(document).ready(function () {
 ## 5 Afghanistan Asia       1972    36.1 13079460      740.
 ## 6 Afghanistan Asia       1977    38.4 14880372      786.</code></pre>
 <p>head as a table</p>
+<pre class="r"><code>library(knitr)
+kable(head(gm))</code></pre>
 <table>
 <thead>
 <tr class="header">

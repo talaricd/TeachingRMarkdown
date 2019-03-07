@@ -80,7 +80,7 @@ David Robinson, data scientist with DataCamp has said that the value of your wor
     - Figshare (<http://figshare.com/>) and Zenodo (<https://zenodo.org/>) allow you to upload any kind of research output, publishable or not, free and unlimited. Instantly get permanently available, citable DOI for your research output.
     - _"Data/code is available upon request"_ or _"Data/code is available at the lab's website"_ are becoming unacceptable.
 1. **Write code that uses relative paths.**
-    - Don't use hard-coded absolute paths (i.e. `/Users/marieke/Data/seq-data.csv` or `C:\Marieke\Documents\Data\Project1\data.txt`). 
+    - Don't use hard-coded absolute paths (i.e. `/Users/marieke/Project1/Data/gapminder.csv` or `C:\Marieke\Documents\Project1\Data\gapminder.txt`). 
     - Put the data in the project directory and reference it _relative_ to where the code is, e.g., `data/gapminder.csv`, etc.  
 1. **Always set your seed.** If you're doing anything that involves random/monte-carlo approaches, always use `set.seed()`.
 1. **Document everything and use code as documentation.**
@@ -169,12 +169,12 @@ Now, delete everything in that document below the metadata header and paste in w
 
 Let's add a plot in there. Write a section heading *Our first plot* and then open up a new R chunk like this:
 
-![](img/plotchunk.png)
+![](img/plotchunk.png){width=500px}
 
 
 Using RStudio you can fiddle around with different ways to make the graphic and keep the one you want. Maybe it looks like this:
 
-![](img/betterplot.png)
+![](img/betterplot.png){width=410px}
 
 ### Chunk options
 
@@ -202,11 +202,11 @@ A special note about **caching**: The `cache=` option is automatically set to `F
 
 ### Tables with kable
 
-The [knitr](http://yihui.name/knitr/) package that runs the RMarkdown document in the background also has a function called `kable` that helps with printing tables nicely. It's only useful when you set `echo=FALSE` and `results='asis'`. Try this.
+The [knitr](http://yihui.name/knitr/) package that runs the RMarkdown document in the background also has a function called `kable` that helps with printing tables nicely. Try it!
 
-![](img/kabletable.png)
+![](img/kabletable.png){width=300px}
 
-## Tables using gt
+### Tables using gt
 
 The `kable` function will work to make very simple tables. If you are interested in creating beautiful, publication-ready tables, you might consider looking into the `gt` package. It is not available from the Comprehensive R Archive Network (CRAN) yet, so we will not demo it today, but it is the new, state-of-the-art package for creating display tables. Please check out the [gt package documentation](https://gt.rstudio.com/)
 
@@ -221,7 +221,7 @@ Now that you know how to make documents with RMarkdown, we should talk about sha
 [RPubs.com](http://rpubs.com/) is a free service from RStudio that allows you to seamlessly publish the results of your R analyses online. Sign up for an account at [RPubs.com](http://rpubs.com/), then sign in on your browser.
 
 
-## GitHub
+### GitHub
 
 Let's start on GitHub by making a new repository. You can think of a repository as a folder to contain all of the work for one project. Log in to GitHub, go to Repositories, and create a new one. Give it a name, and click "yes" to Initialize with README.md file. Copy the URL for the new repository.
 
@@ -235,7 +235,7 @@ Open the README.md file and write a new line in the file. Let's add the line "Th
 
 The main idea is that we are going to make changes locally and then **push** them up to the remote on GitHub
 
-![github](img/github.png)
+![](img/github.png){width=400px}
 
 In the Git window (usually) in the top right of RStudio, tick the box next to the README.md file. You ticking that box is called **staging** the change. Then click **commit**. Add a commit message like "Add to README". A good commit message succinctly tells  what the change will do. For more on writing good commit messages check out [Code like a girl's advice](https://code.likeagirl.io/useful-tips-for-writing-better-git-commit-messages-808770609503).
 
@@ -248,6 +248,12 @@ Now check GitHub to see the new line in the README file.
 Let's move the file called rwmeta.rmd to our GitHub directory. Change the output format to be HTML but keep the md file. Now knit the file so that the md and HTML are produced. On GitHub, md files will render automatically so they are easily read. **Stage**, **commit**, then **push** the changed files up to GitHub.
 
 Rejoice!
+
+### EXERCISE
+
+Notice how there is a lot of messages and such in our rendered Gapminder analysis output (rmdwmeta) that we may not want shown. On your own, change the options on the R chunks to hide any of the output that you do not feel belongs in the output document.
+
+------------------
 
 You can see the rendered page for this RMarkdown file on github at the [TeachingRMarkdown site](https://github.com/HSL-Data/TeachingRMarkdown/blob/master/r-rmarkdown.md)
 
