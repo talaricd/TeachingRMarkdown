@@ -254,9 +254,41 @@ Rejoice!
 
 Notice how there is a lot of messages and such in our rendered Gapminder analysis output (rmdwmeta) that we may not want shown. On your own, change the options on the R chunks to hide any of the output that you do not feel belongs in the output document.
 
+Now that you have made that change, let's *push* your final version up to your GitHub page!
+
 ------------------
 
-You can see the rendered page for this RMarkdown file on github at the [TeachingRMarkdown site](https://github.com/HSL-Data/TeachingRMarkdown/blob/master/r-rmarkdown.md)
+# When to commit changes?
+
+A good rule of thumb is that whenever you complete a substantive step of an analysis, you should commit the change. Every commit represents a time in the analysis that you could revert back to. In a homework, after you complete the answer to each of the problems is a good time to commit.
+
+Maybe this visual helps...
+
+![](img/commit.png){width=400px}
+
+Now that you have committed a few times, let's take a look at the history of the document on Github. 
+
+# Pull requests (if there is time)
+
+The next step in your Github journey is to submit a *pull request* indicating to the owner of a repository that you have a suggested change. I have created a document on Github called `foods.csv` and I would encourage you to submit a pull request on that document to try it out.
+
+Begin by "forking the repo" on GitHub so that there is a version of the [GutHubRMarkdown repo](https://github.com/HSL-Data/TeachingRMarkdown) in your account. 
+
+Once this repo is in your account, look for the foods.csv file and click the pencil icon to edit it. Add your data and *commit to master* in your repo
+
+Navigate back to the page for the TeachingRMarkdown repo in your account. There is a gray bar telling you that your version is 1 commit ahead of the HSL-Data master. 
+
+![](img/pull_request.png){width=400px}
+
+Click the *Pull request* button next to that message to send a message to the Data-HSL GitHub account that you would like to make this change. Add a commit message just like you would for your own work and submit the request.
+
+As soon as I see it, I will accept the Pull request and your change will be added to the master version on the HSL-Data GitHub page.
+
+Success!
+
+-------------------
+
+FYI: You can see the rendered page for this RMarkdown file on github at the [TeachingRMarkdown site](https://github.com/HSL-Data/TeachingRMarkdown/blob/master/r-rmarkdown.md)
 
 ## Resources for RMarkdown
 

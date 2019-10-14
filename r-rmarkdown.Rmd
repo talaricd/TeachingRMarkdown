@@ -273,9 +273,17 @@ The next step in your Github journey is to submit a *pull request* indicating to
 
 Begin by "forking the repo" on GitHub so that there is a version of the [GutHubRMarkdown repo](https://github.com/HSL-Data/TeachingRMarkdown) in your account. 
 
-Now, in your GitHub, open the `foods.csv` file and add your favorite fast food.
+Once this repo is in your account, look for the foods.csv file and click the pencil icon to edit it. Add your data and *commit to master* in your repo
 
-Now 
+Navigate back to the page for the TeachingRMarkdown repo in your account. There is a gray bar telling you that your version is 1 commit ahead of the HSL-Data master. 
+
+![](img/pull_request.png){width=400px}
+
+Click the *Pull request* button next to that message to send a message to the Data-HSL GitHub account that you would like to make this change. Add a commit message just like you would for your own work and submit the request.
+
+As soon as I see it, I will accept the Pull request and your change will be added to the master version on the HSL-Data GitHub page.
+
+Success!
 
 -------------------
 

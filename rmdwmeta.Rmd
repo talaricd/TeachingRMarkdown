@@ -47,7 +47,6 @@ ggplot(gm, aes(gdpPercap, lifeExp)) +
   geom_point(aes(col=continent))
 ```
 
-
 # Trying out a table using kable
 See some data using head
 
